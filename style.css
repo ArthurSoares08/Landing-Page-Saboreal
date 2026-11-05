@@ -171,3 +171,10 @@
             padding: 6px 8px;
         }
     }
+    .hero-logo {
+  display: block;
+  width: 160px;
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto 28px;
+}
