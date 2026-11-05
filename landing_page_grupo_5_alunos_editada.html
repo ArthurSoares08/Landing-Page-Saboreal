@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça nosso grupo de cinco alunos.">
+  <title>Nosso Grupo | 5 Alunos</title>
+  <style>
+    :root {
+      --brown-dark: #2b1b16;
+      --brown: #493027;
+      --brown-mid: #684638;
+      --cream: #f4eadf;
+      --muted: #d0bcae;
+      --accent: #d5a77b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--cream);
+      background: var(--brown-dark);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 90%); margin: auto; }
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(244,234,223,.13);
+      background: rgba(43,27,22,.92);
+    }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .logo { font-weight: 800; letter-spacing: 2px; color: var(--accent); }
+    nav a { color: var(--muted); font-size: .95rem; margin-left: 22px; }
+    nav a:hover { color: white; }
+    .hero {
+      min-height: 440px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 90px 0;
+      background: radial-gradient(ellipse at top, #684638 0%, #493027 42%, #2b1b16 100%);
+    }
+    .eyebrow {
+      display: inline-block;
+      color: var(--accent);
+      border: 1px solid rgba(213,167,123,.45);
+      border-radius: 30px;
+      padding: 7px 15px;
+      font-size: .78rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    h1 { font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.05; margin-bottom: 20px; }
+    h1 span { color: var(--accent); }
+    .hero p { color: var(--muted); max-width: 620px; margin: 0 auto 30px; font-size: 1.08rem; }
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--brown-dark);
+      padding: 13px 23px;
+      border-radius: 7px;
+      font-weight: 700;
+      transition: .2s ease;
+    }
+    .button:hover { transform: translateY(-3px); background: #e4bd98; }
+    section { padding: 78px 0; }
+    .section-heading { text-align: center; margin-bottom: 38px; }
+    .section-heading p { color: var(--muted); margin-top: 8px; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+    .members {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+    .member {
+      background: var(--brown);
+      border: 1px solid rgba(244,234,223,.1);
+      border-radius: 13px;
+      padding: 25px 17px;
+      text-align: center;
+      transition: .25s ease;
+    }
+    .member:hover { transform: translateY(-6px); border-color: var(--accent); }
+    .avatar {
+      width: 76px; height: 76px; border-radius: 50%;
+      margin: 0 auto 17px;
+      display: grid; place-items: center;
+      background: var(--brown-mid);
+      color: var(--accent);
+      font-size: 1.5rem; font-weight: 800;
+      border: 2px solid rgba(213,167,123,.6);
+    }
+    .member h3 { font-size: 1.05rem; margin-bottom: 5px; }
+    .member p { color: var(--muted); font-size: .88rem; min-height: 42px; }
+    .socials { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 17px; }
+    .socials a {
+      font-size: .78rem; padding: 7px 10px; border-radius: 5px;
+      border: 1px solid rgba(244,234,223,.25); color: var(--cream);
+    }
+    .socials a:hover { background: var(--accent); color: var(--brown-dark); border-color: var(--accent); }
+    .about { background: #38241d; }
+    .about-content { max-width: 760px; margin: auto; text-align: center; }
+    .about-content p { color: var(--muted); margin-top: 15px; }
+    footer { padding: 25px 0; text-align: center; color: var(--muted); font-size: .85rem; border-top: 1px solid rgba(244,234,223,.13); }
+    @media (max-width: 900px) { .members { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) {
+      nav { align-items: flex-start; flex-direction: column; }
+      nav a { margin: 0 15px 0 0; }
+      .members { grid-template-columns: 1fr; }
+      .member { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#">NOSSO GRUPO.</a>
+        <div>
+          <a href="#integrantes">Integrantes</a>
+          <a href="#sobre">Sobre</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Apresentação do grupo</span>
+        <h1>Ideias que se tornam<br><span>projetos.</span></h1>
+        <p>Somos um grupo de cinco alunos unidos pela criatividade, colaboração e vontade de aprender. Conheça quem está por trás do nosso trabalho.</p>
+        <a class="button" href="#integrantes">Conheça a equipe</a>
+      </div>
+    </section>
+
+    <section id="integrantes">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Quem faz acontecer</h2>
+          <p>Cinco pessoas, diferentes habilidades e um objetivo em comum.</p>
+        </div>
+        <div class="members">
+          <article class="member">
+            <div class="avatar">A1</div>
+            <h3>Nome do Aluno 1</h3>
+            <p class="phone">Telefone: (00) 00000-0000</p>
+            <p>Curso • Período</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </article>
+          <article class="member">
+            <div class="avatar">A2</div>
+            <h3>Nome do Aluno 2</h3>
+            <p class="phone">Telefone: (00) 00000-0000</p>
+            <p>Curso • Período</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </article>
+          <article class="member">
+            <div class="avatar">A3</div>
+            <h3>Nome do Aluno 3</h3>
+            <p class="phone">Telefone: (00) 00000-0000</p>
+            <p>Curso • Período</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </article>
+          <article class="member">
+            <div class="avatar">A4</div>
+            <h3>Nome do Aluno 4</h3>
+            <p class="phone">Telefone: (00) 00000-0000</p>
+            <p>Curso • Período</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </article>
+          <article class="member">
+            <div class="avatar">A5</div>
+            <h3>Nome do Aluno 5</h3>
+            <p class="phone">Telefone: (00) 00000-0000</p>
+            <p>Curso • Período</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container about-content">
+        <span class="eyebrow">Nossa equipe</span>
+        <h2>Juntos, construímos algo maior.</h2>
+        <p>Este espaço apresenta nossa equipe, nossas competências e o trabalho que desenvolvemos em conjunto. Acreditamos que boas ideias crescem quando diferentes perspectivas se encontram.</p>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="container">© 2026 • Nosso Grupo — Desenvolvido pelos alunos.</div>
+  </footer>
+</body>
+</html>
